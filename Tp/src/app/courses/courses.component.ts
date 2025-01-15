@@ -10,9 +10,11 @@ import { Component } from '@angular/core';
 export class CoursesComponent {
   coursesName:string = 'Angular avancee';
   isDisable:boolean = true;
-  courseDescription:string = "";
+  courseDescription:string = '';
 
   startCourse():void {
     return alert("le cour commence!")
   }
+
+  courses = ["cour_1", "cour_2", "cour_3", "cour_4",];
 }
