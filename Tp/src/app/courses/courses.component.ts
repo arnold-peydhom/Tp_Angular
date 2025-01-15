@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class CoursesComponent {
   coursesName = 'Angular avancee';
+  isDisable = true;
 }
