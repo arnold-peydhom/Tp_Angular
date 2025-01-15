@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './courses.component.css'
 })
 export class CoursesComponent {
-  coursesName = 'Angular avancee';
-  isDisable = true;
+  coursesName:string = 'Angular avancee';
+  isDisable:boolean = true;
+  courseDescription:string = "";
 
   startCourse():void {
     return alert("le cour commence!")
