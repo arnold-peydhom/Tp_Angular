@@ -26,4 +26,9 @@ export class CoursesComponent implements OnInit {
     return alert("le cour commence!")
   }
   //courses = ["cour_1", "cour_2", "cour_3", "cour_4",];
+
+  // Méthode pour gérer l'événement
+  onCourseSelected(message: string) {
+    console.log(message);
+  }
 }

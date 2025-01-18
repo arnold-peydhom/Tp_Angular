@@ -7,22 +7,24 @@ import { CoursesComponent } from './courses/courses.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule} from "@angular/forms";
 import { AboutComponent } from './about/about.component';
-import { HttpClientModule } from '@angular/common/http';
+import { CourseItemComponent } from './course-item/course-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     AboutComponent,
+    CourseItemComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
       { path:'courses', component:CoursesComponent},
-      { path:"about", component:AboutComponent}
+      { path:"about", component:AboutComponent},
+      { path:"courseitems", component:CourseItemComponent}
     ])
   ],
   providers: [

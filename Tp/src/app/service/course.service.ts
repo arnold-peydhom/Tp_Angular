@@ -7,7 +7,7 @@ import { Courses } from '../Models/courses';
 })
 export class CourseService {
 
-  private courses: { id: number; name: string; description: string }[] = [
+     course = [
     { id: 1, name: 'Angular Basics', description: 'apprendre Angular Basics' },
     { id: 2, name: 'Angular avancee', description: 'apprendre Angular avancee' },
     { id: 3, name: 'RxJS et Observables', description: 'apprendre RxJS et Observables' }
@@ -16,6 +16,6 @@ export class CourseService {
   constructor() { }
 
   getCourses(){
-    return this.courses;
+    return this.course;
   }
 }

@@ -10,8 +10,22 @@
 <p>{{courseDescription}}</p>
 <!--exo6-->
 <ul>
-  <li *ngFor="let courses of course">{{courses.id}} {{courses.name}} {{courses.description}}</li>
+  <li *ngFor="let courses of course">name: {{courses.name}}, description: {{courses.description}}</li>
 </ul>
 <!--exo7-->
 <!--exo8-->
+<!--exo9-->
+<h1>Liste des cours</h1>
+<div *ngFor="let coursess of course">
+  <app-course-item [courseItem]="coursess"></app-course-item>
+</div>
+
+<!--exo10-->
+<div *ngFor="let courses of course">
+  <app-course-item
+    [courseItem]="courses"
+    (courseSelected)="onCourseSelected($event)">
+  </app-course-item>
+</div>
+
 
